@@ -1,0 +1,11 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/herf4378/hero-barbershop
+    - /bin/cp -R app $DEPLOYPATH/
+    - /bin/cp -R resources $DEPLOYPATH/
+    - /bin/cp -R routes $DEPLOYPATH/
+    - /bin/cp -R config $DEPLOYPATH/
+    - /bin/cp -R database $DEPLOYPATH/
+    - /bin/cp -R public/fixpermission.php /dev/null 2>&1 || true
+    - /bin/cp -R bootstrap $DEPLOYPATH/
