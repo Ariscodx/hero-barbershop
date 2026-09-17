@@ -38,7 +38,7 @@ class RegisteredUserController extends Controller
             'nama'     => ['required', 'string', 'max:100'],
             'email'    => ['required', 'string', 'lowercase', 'email', 'max:100', 'unique:pelanggan,email'],
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
-            'no_tlp'   => ['nullable', 'string', 'max:13'],
+            'no_tlp'   => ['required', 'string', 'max:13'],
             'alamat'   => ['nullable', 'string'],
         ]);
 

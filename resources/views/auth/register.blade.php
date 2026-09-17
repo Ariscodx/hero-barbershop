@@ -140,8 +140,7 @@
 
                     <!-- No Telepon -->
                     <div class="space-y-2">
-                        <label class="block text-sm font-semibold text-gray-700">No Telepon <span
-                                class="text-gray-400 font-normal">(opsional)</span></label>
+                        <label class="block text-sm font-semibold text-gray-700">No Telepon</label>
                         <div class="relative">
                             <div
                                 class="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none text-gray-400">
@@ -152,7 +151,7 @@
                             </div>
                             <input type="text" name="no_tlp" value="{{ old('no_tlp') }}"
                                 class="w-full rounded-xl border-gray-200 shadow-sm focus:border-[#C8A96A] focus:ring focus:ring-[#C8A96A] focus:ring-opacity-30 pl-11 pr-4 py-3 text-sm text-gray-900 bg-white transition-all duration-300"
-                                placeholder="08xxxxxxxxxx">
+                                placeholder="08xxxxxxxxxx" required>
                         </div>
                         <x-input-error :messages="$errors->get('no_tlp')" class="mt-1" />
                     </div>
