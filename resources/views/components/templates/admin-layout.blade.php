@@ -8,6 +8,9 @@
 
     <title>{{ config('app.name', 'Hero Barbershop') }} - Admin</title>
 
+    <!-- Favicon -->
+    <link rel="icon" href="{{ asset('images/logo_hero_barbershop.png') }}" type="image/png">
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

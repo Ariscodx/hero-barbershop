@@ -7,5 +7,6 @@ deployment:
     - /bin/cp -R routes $DEPLOYPATH/
     - /bin/cp -R config $DEPLOYPATH/
     - /bin/cp -R database $DEPLOYPATH/
+    - /bin/cp -R public/images $DEPLOYPATH/public/
     - /bin/cp -R public/fixpermission.php /dev/null 2>&1 || true
     - /bin/cp -R bootstrap $DEPLOYPATH/

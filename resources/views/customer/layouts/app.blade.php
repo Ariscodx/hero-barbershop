@@ -9,6 +9,9 @@
     <title>@yield('title', config('app.name', 'Hero Barbershop') . ' - Dashboard Pelanggan')</title>
     <meta name="description" content="@yield('description', 'Dashboard Pelanggan Hero Barbershop — Booking layanan potong rambut kini lebih mudah secara online.')">
 
+    <!-- Favicon -->
+    <link rel="icon" href="{{ asset('images/logo_hero_barbershop.png') }}" type="image/png">
+
     {{-- Fonts: preload untuk cegah FOUT (flash of unstyled text) --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
