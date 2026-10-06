@@ -52,8 +52,8 @@
                 <div class="hidden md:flex items-center gap-8 text-sm font-medium">
                     <a href="{{ route('welcome') }}"
                         class="text-[#1F2A1D] hover:text-[#C8A96A] transition-colors">Beranda</a>
-                    <a href="#" class="text-gray-500 hover:text-[#C8A96A] transition-colors">Lokasi</a>
-                    <a href="#" class="text-gray-500 hover:text-[#C8A96A] transition-colors">Kontak</a>
+                    <a href="https://maps.app.goo.gl/CKr6dRYG8d2p4C4y5" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-[#C8A96A] transition-colors">Lokasi</a>
+                    <a href="https://wa.me/6281542435587" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-[#C8A96A] transition-colors">Kontak</a>
                 </div>
 
                 <!-- Mobile Menu Button -->
@@ -81,9 +81,9 @@
             style="display: none;">
             <a href="{{ route('welcome') }}"
                 class="block px-4 py-3 rounded-xl bg-gray-50 text-[#1F2A1D] font-medium transition-colors hover:bg-gray-100">Beranda</a>
-            <a href="#"
+            <a href="https://maps.app.goo.gl/CKr6dRYG8d2p4C4y5" target="_blank" rel="noopener noreferrer"
                 class="block px-4 py-3 rounded-xl text-gray-600 font-medium transition-colors hover:bg-gray-50 hover:text-[#1F2A1D]">Lokasi</a>
-            <a href="#"
+            <a href="https://wa.me/6281542435587" target="_blank" rel="noopener noreferrer"
                 class="block px-4 py-3 rounded-xl text-gray-600 font-medium transition-colors hover:bg-gray-50 hover:text-[#1F2A1D]">Kontak</a>
         </div>
     </nav>
