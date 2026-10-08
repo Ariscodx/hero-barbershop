@@ -418,19 +418,46 @@
                 {{-- Tombol: Lihat Jadwal --}}
                 <a href="{{ route('customer.jadwal') }}"
                     class="group flex flex-col items-center justify-center gap-3 p-6 rounded-2xl text-center card-hover border border-[#E5E7EB] bg-white">
-                    ...
+                    <div class="w-14 h-14 rounded-2xl flex items-center justify-center transition-transform duration-200 group-hover:scale-110"
+                        style="background: rgba(212,176,106,0.15);">
+                        <svg class="w-7 h-7 text-[#D4B06A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-sm text-[#1F2A1D]">Lihat Jadwal</p>
+                        <p class="text-xs text-gray-400 mt-0.5">Jam operasional</p>
+                    </div>
                 </a>
 
                 {{-- Tombol: Cek Status Booking --}}
                 <a href="{{ route('customer.status') }}"
                     class="group flex flex-col items-center justify-center gap-3 p-6 rounded-2xl text-center card-hover border border-[#E5E7EB] bg-white">
-                    ...
+                    <div class="w-14 h-14 rounded-2xl flex items-center justify-center transition-transform duration-200 group-hover:scale-110"
+                        style="background: rgba(34,197,94,0.1);">
+                        <svg class="w-7 h-7 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-sm text-[#1F2A1D]">Status Booking</p>
+                        <p class="text-xs text-gray-400 mt-0.5">Cek pesanan aktif</p>
+                    </div>
                 </a>
 
                 {{-- Tombol: Lihat Riwayat Booking --}}
                 <a href="{{ route('customer.riwayat') }}"
                     class="group flex flex-col items-center justify-center gap-3 p-6 rounded-2xl text-center card-hover border border-[#E5E7EB] bg-white">
-                    ...
+                    <div class="w-14 h-14 rounded-2xl flex items-center justify-center transition-transform duration-200 group-hover:scale-110"
+                        style="background: rgba(59,130,246,0.1);">
+                        <svg class="w-7 h-7 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-sm text-[#1F2A1D]">Riwayat</p>
+                        <p class="text-xs text-gray-400 mt-0.5">Semua booking</p>
+                    </div>
                 </a>
 
             </div>
