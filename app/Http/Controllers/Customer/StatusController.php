@@ -142,7 +142,6 @@ class StatusController extends Controller
                 'success' => true,
                 'message' => 'Booking berhasil dibatalkan.',
             ]);
-
         } catch (\Exception $e) {
             // Batalkan semua perubahan jika terjadi error
             DB::rollBack();
