@@ -489,19 +489,14 @@
 
             {{-- Status badge in modal --}}
             <div class="mb-5">
-                <template x-if="activeBooking && activeBooking.status === 'menunggu'">
-                    <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold bg-yellow-100 text-yellow-700">
-                        <span class="w-1.5 h-1.5 rounded-full bg-yellow-500 inline-block"></span>Menunggu Konfirmasi
+                <template x-if="activeBooking && activeBooking.status === 'terkonfirmasi'">
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold bg-[#FFFBEB] text-[#D4AF63] border border-[#F0D080]">
+                        <span class="w-1.5 h-1.5 rounded-full bg-[#D4AF63] inline-block"></span>Terkonfirmasi
                     </span>
                 </template>
-                <template x-if="activeBooking && activeBooking.status === 'dikonfirmasi'">
-                    <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold bg-green-100 text-green-700">
-                        <span class="w-1.5 h-1.5 rounded-full bg-green-500 inline-block"></span>Dikonfirmasi
-                    </span>
-                </template>
-                <template x-if="activeBooking && activeBooking.status === 'selesai'">
-                    <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold bg-blue-100 text-blue-700">
-                        <span class="w-1.5 h-1.5 rounded-full bg-blue-500 inline-block"></span>Selesai
+                <template x-if="activeBooking && activeBooking.status === 'berlangsung'">
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold bg-blue-50 text-blue-600 border border-blue-200">
+                        <span class="w-1.5 h-1.5 rounded-full bg-blue-500 inline-block"></span>Berlangsung
                     </span>
                 </template>
                 <template x-if="activeBooking && activeBooking.status === 'dibatalkan'">
@@ -540,12 +535,11 @@
                     </div>
                     <div class="flex justify-between px-4 py-3 bg-[#F8F8F5]/60">
                         <span class="text-sm text-gray-500">Status</span>
-                        <span class="text-sm font-semibold" x-text="statusLabel(activeBooking.status)"
+                        <span class="text-sm font-semibold" x-text="statusLabel(activeBooking.status).text"
                               :class="{
-                                  'text-yellow-700': activeBooking.status === 'menunggu',
-                                  'text-green-700':  activeBooking.status === 'dikonfirmasi',
-                                  'text-blue-700':   activeBooking.status === 'selesai',
-                                  'text-red-700':    activeBooking.status === 'dibatalkan',
+                                  'text-[#D4AF63]': activeBooking.status === 'terkonfirmasi',
+                                  'text-blue-600':  activeBooking.status === 'berlangsung',
+                                  'text-red-500':   activeBooking.status === 'dibatalkan',
                               }">
                         </span>
                     </div>
